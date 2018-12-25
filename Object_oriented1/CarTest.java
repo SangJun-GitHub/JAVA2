@@ -10,7 +10,19 @@ class Car{
     String gearType;
     int door;
 
-    Car(){}
+    Car(){
+        this("white", "auto", 4);
+    }
+
+    Car(String color){
+        this(color, "auto", 4);
+    }
+
+    Car(String c, String g, int d){
+        this.color = c;
+        this.gearType = g;
+        this.door = d;
+    }
 
     @Override
     public String toString() {
@@ -19,12 +31,6 @@ class Car{
                 ", gearType='" + gearType + '\'' +
                 ", door=" + door +
                 '}';
-    }
-
-    Car(String c, String g, int d){
-        color = c;
-        gearType = g;
-        door = d;
     }
 }
 public class CarTest {
