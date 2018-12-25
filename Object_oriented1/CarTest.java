@@ -23,6 +23,12 @@ class Car{
         this.gearType = g;
         this.door = d;
     }
+    Car(Car c){
+        color = c.color;
+        gearType = c.gearType;
+        door = c.door;
+
+    }
 
     @Override
     public String toString() {
