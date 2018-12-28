@@ -10,7 +10,6 @@ class Point2 {
    int y = 20;
    Point2(){}
    Point2(int x, int  y) {
-       super();
        this.x = x;
        this.y = y;
    }
@@ -20,7 +19,7 @@ class Point2 {
 }
 
 class Point3D extends Point2 {
-    int z = 30;
+    int z;
     Point3D() {
         this(100,200,300);  //call Point3D(int x, int y, int z)
     }
@@ -45,5 +44,6 @@ public class PointTest {
         System.out.println("p = " + p.getLocation());
         System.out.println("p.x : " + p.x);
         System.out.println("p.y : " + p.y);
+
     }
 }
