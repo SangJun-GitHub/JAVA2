@@ -5,17 +5,17 @@ package Object_oriented2;
  * Project: JAVA2
  * Github : http://github.com/SangJun-GitHub
  */
-class Product {
+class Product2 {
     int price;
     int bonusPoint;
 
-    Product(int price){
+    Product2(int price){
         this.price = price;
         bonusPoint = (int)(price/10.0);
     }
 }
 
-class Tv2 extends Product {
+class Tv2 extends Product2 {
     Tv2(){
         super(400);
     }
@@ -25,8 +25,8 @@ class Tv2 extends Product {
     }
 }
 
-class Computer extends Product{
-    Computer(){
+class Computer2 extends Product2{
+    Computer2(){
         super(500);
     }
 
@@ -35,13 +35,13 @@ class Computer extends Product{
     }
 }
 
-class Buyer {
+class Buyer2 {
     int money = 1000;
     int bonusPoint =0;
 
-    void buy(Product p){
+    void buy(Product2 p){
         if(money < p.price){
-            System.out.println("Not enough money to buy product");
+            System.out.println("Not enough money to buy " + p);
             return;
         }
         money -= p.price;
@@ -57,14 +57,14 @@ class Buyer {
 
 public class PolyArgumentTest {
     public static void main(String[] args) {
-        Buyer b = new Buyer();
+        Buyer2 b = new Buyer2();
 
         b.buy(new Tv2());
         b.status();
-        b.buy(new Computer());
+        b.buy(new Computer2());
         b.status();
 
-        b.buy(new Computer());
+        b.buy(new Computer2());
         b.status();
 
     }
