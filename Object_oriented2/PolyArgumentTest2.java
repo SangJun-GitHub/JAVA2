@@ -81,6 +81,6 @@ public class PolyArgumentTest2 {
         b.summary();
         b.buy(new Tv3());
         b.summary();
-        
+
     }
 }
