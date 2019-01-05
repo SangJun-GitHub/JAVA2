@@ -5,22 +5,22 @@ package Object_oriented2;
  * Project: JAVA2
  * Github : http://github.com/SangJun-GitHub
  */
-interface I {
+interface I2 {
     public abstract void play();
 }
 class A2 {
-    void autoPlay(I i){
+    void autoPlay(I2 i){
         i.play();
     }
 }
 
-class B2 implements I {
+class B2 implements I2 {
     public void play(){
         System.out.println("play in B class");
     }
 }
 
-class C2 implements I {
+class C2 implements I2 {
     public void play(){
         System.out.println("play in C class");
     }
