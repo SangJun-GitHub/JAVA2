@@ -11,10 +11,10 @@ public class ExceptionEx6 {
         System.out.println(2);
         try{
             System.out.println(3);
-            System.out.println(0/0);
+            System.out.println(0/0);            //Error!!!
             System.out.println(4);
         }catch(ArithmeticException ae){
-            ae.printStackTrace();
+            ae.printStackTrace();           //Through reference variable "ae", we can access ArithmeticException instance
             System.out.println("Error message : " + ae.getMessage());
         }
         System.out.println(6);
