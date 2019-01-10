@@ -7,7 +7,7 @@ package Exception_handling;
  */
 public class ExceptionEx8 {
     public static void main(String[] args) {
-//        throw new Exception();          //Intentional occurrence.
+//        throw new Exception();        //Intentional occurrence.
                                         //compile error. There is no exception handling in the area where exception handling should be done
     }
 }
