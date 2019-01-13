@@ -5,7 +5,7 @@ package Exception_handling;
  * Project: JAVA2
  * Github : http://github.com/SangJun-GitHub
  */
-public class FinallyTest {
+public class FinallyTest1 {
     public static void main(String[] args) {
         try{
             startInstall();
