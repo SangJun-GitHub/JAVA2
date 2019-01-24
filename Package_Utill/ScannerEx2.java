@@ -12,14 +12,14 @@ public class ScannerEx2 {
     public static void main(String[] args) throws Exception{
         Scanner scanner = new Scanner(new File("./src/Package_Utill/data2.txt"));
         int sum = 0;
-        int cnt = 0;
+        int count = 0;
 
         while (scanner.hasNextInt()){
             sum += scanner.nextInt();
-            cnt++;
+            count++;
         }
 
         System.out.println("sum : " + sum);
-        System.out.println("average : " + (double)sum/cnt);
+        System.out.println("average : " + (double)sum/count);
     }
 }
