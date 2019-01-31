@@ -7,7 +7,7 @@ import java.util.Calendar;
  * Project: JAVA2
  * Github : http://github.com/SangJun-GitHub
  */
-public class CalenderEx1 {
+public class CalendarEx1 {
     public static void main(String[] args) {
         Calendar today = Calendar.getInstance();
         System.out.println("This year is : " + today.get(Calendar.YEAR));
