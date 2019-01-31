@@ -21,8 +21,8 @@ public class CalendarEx2 {
         System.out.println("today : " + toString(date2) + DAY_OF_WEEK[date2.get(Calendar.DAY_OF_WEEK)]);
 
         long difference = (date2.getTimeInMillis() - date1.getTimeInMillis());
-        System.out.println("the difference from date1 until date2 : " + difference + " seconds");
-        System.out.println("the difference from date1 until date2 : " + difference/(24*60*60) + " days");
+        System.out.println("the difference from date1 until date2 : " + difference + "seconds");
+        System.out.println("the difference from date1 until date2 : " + difference/(24*60*60) + "days");
     }
     public static String toString(Calendar date){
         return date.get(Calendar.YEAR) + "year " + (date.get(Calendar.MONTH)+1) + "month " + date.get(Calendar.DATE) + "day ";

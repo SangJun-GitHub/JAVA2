@@ -36,6 +36,6 @@ public class CalendarEx4 {
     }
 
     public static String toString(Calendar date){
-        return date.get(Calendar.YEAR) + " year " + (date.get(Calendar.MONTH)+1) + " month " + date.get(Calendar.DATE) + " day";
+        return date.get(Calendar.YEAR) + "year " + (date.get(Calendar.MONTH)+1) + "month " + date.get(Calendar.DATE) + "day";
     }
 }
