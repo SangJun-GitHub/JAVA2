@@ -11,7 +11,7 @@ import java.util.Calendar;
 public class CalendarEx6 {
     public static void main(String[] args) {
         if(args.length != 2){
-            System.out.println("Usage : java CalendarEx6 2015 9");
+            System.out.println("Usage : java CalendarEx6 2019 2");
             return;
         }
         int year = Integer.parseInt(args[0]);
