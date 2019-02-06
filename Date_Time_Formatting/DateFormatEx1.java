@@ -16,7 +16,7 @@ public class DateFormatEx1 {
         SimpleDateFormat sdf5, sdf6, sdf7, sdf8, sdf9;
 
         sdf1 = new SimpleDateFormat("yyy-MM-dd");
-        sdf2 = new SimpleDateFormat("''yy'year' MM'month' dd'day' E'day'");
+        sdf2 = new SimpleDateFormat("''yy'year' MM'month' dd'day' E");
         sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         sdf4 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
 
