@@ -29,7 +29,7 @@ public class MyStack extends Vector {
     }
     public int search (Object object){
         int i = lastIndexOf(object);            //Find object from last element.
-                                                
+
         if( i >= 0)
             return size() - i;
         return -1;                              //if the search() method could not find object, return -1
