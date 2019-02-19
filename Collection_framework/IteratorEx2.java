@@ -3,7 +3,6 @@ package Collection_framework;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import static java.lang.Math.random;
 
 
 /**
