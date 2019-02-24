@@ -33,3 +33,19 @@ public class PropertiesEx1 {
         prop.list(System.out);
     }
 }
+
+//---------------------------Output---------------------------
+//capacity = 10
+//size = 10
+//timeout = 30
+//language = en
+//
+//size=20
+//capacity=10
+//loadfactor=0.75                                               <- loadfactor key does not exist, so default 0.75 come up
+//{capacity=10, size=20, timeout=30, language=en}               <- System.out.println(prop);
+//-- listing properties --                                      <- prop.list(System.out);
+//capacity=10                                                   <- prop.list(System.out);
+//size=20                                                       <- prop.list(System.out);
+//timeout=30                                                    <- prop.list(System.out);
+//language=en                                                   <- prop.list(System.out);  
