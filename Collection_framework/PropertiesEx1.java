@@ -48,4 +48,4 @@ public class PropertiesEx1 {
 //capacity=10                                                   <- prop.list(System.out);
 //size=20                                                       <- prop.list(System.out);
 //timeout=30                                                    <- prop.list(System.out);
-//language=en                                                   <- prop.list(System.out);  
+//language=en                                                   <- prop.list(System.out);
