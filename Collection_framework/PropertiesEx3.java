@@ -22,7 +22,7 @@ public class PropertiesEx3 {
             prop.store(new FileOutputStream("output.txt"), "Properties Example");
             prop.storeToXML(new FileOutputStream("output.txt"), "Properties Example");
         }catch (IOException e){
-
+            e.printStackTrace();
         }
 
     }
