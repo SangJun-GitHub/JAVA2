@@ -48,15 +48,15 @@ class Box2<T>{
         return list.toString();
     }
 }
-class FruitBox<T extends Fruit2 & Eatable> extends Box<T>{}
+class FruitBox2<T extends Fruit2 & Eatable> extends Box2<T>{}
 
 public class FruitBoxEx2 {
     public static void main(String[] args) {
-        FruitBox<Fruit2> fruitBox = new FruitBox<Fruit2>();
-        FruitBox<Apple2> appleBox = new FruitBox<Apple2>();
-        FruitBox<Grape2> grapeBox = new FruitBox<Grape2>();
-        //FruitBox<Grape2> grapeBox = new FruitBox<Apple2>();       Error. unmatched type.
-        //FruitBox<Toy2> toyBox = new FruitBox<Toy2>();             Error. because of Eatable interface.
+        FruitBox2<Fruit2> fruitBox = new FruitBox2<Fruit2>();
+        FruitBox2<Apple2> appleBox = new FruitBox2<Apple2>();
+        FruitBox2<Grape2> grapeBox = new FruitBox2<Grape2>();
+        //FruitBox2<Grape2> grapeBox = new FruitBox2<Apple2>();       Error. unmatched type.
+        //FruitBox2<Toy2> toyBox = new FruitBox2<Toy2>();             Error. because of Eatable interface.
 
         fruitBox.add(new Fruit2());
         fruitBox.add(new Apple2());
