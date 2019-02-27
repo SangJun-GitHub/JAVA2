@@ -16,5 +16,7 @@ class Child extends Parent{
     void parentMethod(){}
 }
 public class AnnotationEx1 {
+    public static void main(String[] args) {
 
+    }
 }
