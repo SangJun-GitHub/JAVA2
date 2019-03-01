@@ -11,11 +11,9 @@ public class ThreadEx4 {
 
         for(int i = 0; i < 300; i++)
             System.out.printf("%s", new String("-"));
-        System.out.println();
-        System.out.println("Total required time1 : " + (System.currentTimeMillis() - startTime));
+        System.out.print("Total required time1 : " + (System.currentTimeMillis() - startTime));
         for(int i = 0; i < 300; i ++)
             System.out.printf("%s", new String("|"));
-        System.out.println();
-        System.out.println("Total required time2 : " + (System.currentTimeMillis() - startTime));
+        System.out.print("Total required time2 : " + (System.currentTimeMillis() - startTime));
     }
 }
