@@ -21,7 +21,7 @@ public class ThreadEx7 {
     public static void main(String[] args) {
         ThreadEx7_1 th1 = new ThreadEx7_1();
         th1.start();
-        
+
         String input = JOptionPane.showInputDialog("Enter text");
         System.out.println("Input is " + input);
     }
