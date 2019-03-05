@@ -27,12 +27,12 @@ public class ThreadEx15 {
 
         try{
             Thread.sleep(2000);
-            th1.suspend();
+            th1.suspend();                          //th1 stop few moment
             Thread.sleep(2000);
             th2.suspend();
-            th1.resume();
+            th1.resume();                           //th1 re-run
             Thread.sleep(3000);
-            th1.stop();
+            th1.stop();                             //th1 stop
             th2.stop();
             Thread.sleep(2000);
             th3.stop();
