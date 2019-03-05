@@ -5,7 +5,7 @@ package Thread;
  * Project: JAVA2
  * Github : http://github.com/SangJun-GitHub
  */
-class RunImp1Ex15 implements Runnable{
+class RunImplEx15 implements Runnable{
     public void run(){
         while(true){
             System.out.println(Thread.currentThread().getName());
@@ -17,7 +17,7 @@ class RunImp1Ex15 implements Runnable{
 }
 public class ThreadEx15 {
     public static void main(String[] args) {
-        RunImp1Ex15 r = new RunImp1Ex15();
+        RunImplEx15 r = new RunImplEx15();
         Thread th1 = new Thread(r, "*");
         Thread th2 = new Thread(r, "**");
         Thread th3 = new Thread(r, "***");
