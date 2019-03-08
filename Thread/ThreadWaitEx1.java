@@ -51,7 +51,7 @@ class Customer implements Runnable{
             String name = Thread.currentThread().getName();
 
             if(eatFood())
-                System.out.println(name + " ate a " + food);
+                System.out.println(name + " ate a " + food + ". :)");
             else
                 System.out.println(name + " failed to eat. :(");
         }
