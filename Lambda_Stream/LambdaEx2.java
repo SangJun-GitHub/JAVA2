@@ -6,22 +6,22 @@ package Lambda_Stream;
  * Github : http://github.com/SangJun-GitHub
  */
 @FunctionalInterface
-interface MyFuntion{
+interface MyFunction2{
     void myMethod();
 }
 public class LambdaEx2 {
     public static void main(String[] args) {
-        MyFunction f = () -> {};
-        Object object = (MyFunction)(()->{});
-        String str = ((Object)(MyFunction)(()->{})).toString();
+        MyFunction2 f = () -> {};
+        Object object = (MyFunction2)(()->{});
+        String str = ((Object)(MyFunction2)(()->{})).toString();
 
         System.out.println(f);
         System.out.println(object);
         System.out.println(str);
 
 //        System.out.println(()->{});                               Error. Lambda can not convert to Object type
-        System.out.println((MyFunction)(()->{}));
+        System.out.println((MyFunction2)(()->{}));
 //        System.out.println((MyFunction)(()->{}).toString());      Error.
-        System.out.println(((Object)(MyFunction)(()->{})).toString());
+        System.out.println(((Object)(MyFunction2)(()->{})).toString());
     }
 }
