@@ -11,24 +11,24 @@ import java.util.stream.Stream;
  */
 class Student implements Comparable<Student>{
     String name;
-    int ban;
+    int classNum;
     int totalScore;
 
-    Student(String name, int ban, int totalScore){
+    Student(String name, int classNum, int totalScore){
         this.name = name;
-        this.ban = ban;
+        this.classNum = classNum;
         this.totalScore = totalScore;
     }
 
     public String toString(){
-        return String.format("[%s, %d, %d]", name, ban, totalScore).toString();
+        return String.format("[%s, %d, %d]", name, classNum, totalScore).toString();
     }
 
     String getName(){
         return name;
     }
-    int getBan(){
-        return ban;
+    int getClassNum(){
+        return classNum;
     }
     int getTotalScore(){
         return totalScore;
@@ -49,7 +49,7 @@ public class StreamEx1 {
                 new Student("Yeon", 3, 180)
         );
 
-        studentStream.sorted(Comparator.comparing(Student::getBan)
+        studentStream.sorted(Comparator.comparing(Student::getClassNum)
                 .thenComparing(Comparator.naturalOrder()))
                 .forEach(System.out::println);
     }

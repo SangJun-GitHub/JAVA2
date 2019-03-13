@@ -1,6 +1,5 @@
 package Lambda_Stream;
 
-import java.sql.Struct;
 import java.util.Comparator;
 import java.util.IntSummaryStatistics;
 import java.util.stream.IntStream;
@@ -13,23 +12,23 @@ import java.util.stream.Stream;
  */
 class Student3 implements Comparable<Student3>{
     String name;
-    int ban;
+    int classNum;
     int totalScore;
 
-    Student3(String name, int ban, int totalScore){
+    Student3(String name, int classNum, int totalScore){
         this.name = name;
-        this.ban = ban;
+        this.classNum = classNum;
         this.totalScore = totalScore;
     }
     public String toString(){
-        return String.format("[%s, %d, %d]", name, ban, totalScore).toString();
+        return String.format("[%s, %d, %d]", name, classNum, totalScore).toString();
     }
 
     String getName(){
        return name;
     }
-    int getBan(){
-        return ban;
+    int getClassNum(){
+        return classNum;
     }
     int getTotalScore(){
         return totalScore;
@@ -52,7 +51,7 @@ public class StreamEx3 {
 
         Stream<Student3> studentStream = Stream.of(stuArr);
 
-        studentStream.sorted(Comparator.comparing(Student3::getBan)
+        studentStream.sorted(Comparator.comparing(Student3::getClassNum)
                 .thenComparing(Comparator.naturalOrder()))
                 .forEach(System.out::println);
 

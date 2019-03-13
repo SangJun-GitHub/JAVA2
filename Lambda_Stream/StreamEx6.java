@@ -14,24 +14,24 @@ import static java.util.stream.Collectors.*;
  */
 class Student6 implements Comparable<Student6>{
     String name;
-    int ban;
+    int classNum;
     int totalScore;
 
-    Student6(String name, int ban, int totalScore){
+    Student6(String name, int classNum, int totalScore){
         this.name = name;
-        this.ban = ban;
+        this.classNum = classNum;
         this.totalScore = totalScore;
     }
 
     public String toString(){
-        return String.format("[%s, %d, %d]", name, ban, totalScore).toString();
+        return String.format("[%s, %d, %d]", name, classNum, totalScore).toString();
     }
 
     String getName(){
         return name;
     }
-    int getBan(){
-        return ban;
+    int getClassNum(){
+        return classNum;
     }
     int getTotalScore(){
         return totalScore;
