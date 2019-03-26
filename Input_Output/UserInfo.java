@@ -5,13 +5,13 @@ package Input_Output;
  * Project: JAVA2
  * Github : http://github.com/SangJun-GitHub
  */
-public class UserInfo {
+public class UserInfo implements java.io.Serializable{
     String name;
     String password;
     int age;
 
     public UserInfo(){
-        this("Unkown", "1111", 0);
+        this("Unknown", "1111", 0);
     }
 
     public UserInfo(String name, String password, int age){
